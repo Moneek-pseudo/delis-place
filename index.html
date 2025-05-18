@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delis Place</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Delis-Place</a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-white text-center d-flex align-items-center justify-content-center" style="
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://img.freepik.com/free-photo/various-vegetables-black-table-with-space-message_1220-614.jpg?t=st=1747515500~exp=1747519100~hmac=cd2d73ecb468b178cd7a4ed76955ebaa53de8ccc6e42756857cfaa0c28b2ea09')
+    no-repeat center center / cover;
+  ">
+        <div>
+            <img src="images/grilled steak-png.jfif" alt="hero pic" class="img-fluid rounded shadow mb-4"
+                style="max-width: 300px;" />
+            <h1 class="display-4 fw-bold">Welcome to Delis Place</h1>
+            <p class="lead">Home of Flavor. Fresh. Bold. Irresistible.</p>
+            <a href="#menu" class="btn btn-primary btn-lg mt-3">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Menu</h2>
+            <div class="row">
+<!-- card one -->
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/spaghetti-png.jpg" class="card-img-top" alt="Spaghetti">
+                        <div class="card-body">
+                            <h5 class="card-title">Spaghetti Bolognese</h5>
+                            <p class="card-text">Rich meat sauce served over pasta.</p>
+                            <p><strong>KSh 1,180</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card two -->
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/rice-fish-png.jpg" class="card-img-top" alt="Rice fish">
+                        <div class="card-body">
+                            <h5 class="card-title">Rice Fish</h5>
+                            <p class="card-text">Fresh water fish, cooked in garlic sauce, with rice and a veggie spring
+                                roll.</p>
+                            <p><strong>KSh 1,199</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card three -->
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <img src="images/beef-steak png.jpg" class="card-img-top" alt="Beef steak">
+                        <div class="card-body">
+                            <h5 class="card-title">Beef Steak</h5>
+                            <p class="card-text">A flat cut of beef with parallel faces.</p>
+                            <p><strong>KSh 1,199</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  About Section  -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="images/chef-png.jpg" class="img-fluid rounded" alt="Chef">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Delis Place</h2>
+                    <p>
+                        Experience the delight of freshly crafted flavors at our deli. We take pride in using
+                        high-quality
+                        ingredients to create simply delicious sandwiches, salads, sides, and more. From classic
+                        combinations to our
+                        own unique creations, every bite is a testament to our commitment to taste and freshness. Come
+                        discover your
+                        new favorite deli experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Delis Place | Follow us:
+            <i class="bi bi-facebook mx-2"></i>
+            <i class="bi bi-instagram mx-2"></i>
+            <i class="bi bi-twitter mx-2"></i>
+        </p>
+    </footer>
+
+</body>
+
+</html>
